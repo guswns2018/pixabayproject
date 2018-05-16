@@ -148,13 +148,18 @@
 
 body {
   background-color: "#212121";
-  background-image: url('https://scontent-icn1-1.xx.fbcdn.net/v/t1.15752-9/32584064_368457807008928_6456443977515139072_n.jpg?_nc_cat=0&oh=113798b98df64d13a6d79b5f0a71943f&oe=5B81DB92');
+  background-image: url('https://scontent-icn1-1.xx.fbcdn.net/v/t1.15752-9/32584064_368457807008928_6456443977515139072_n.jpg?_nc_cat=0&oh=113798b98df64d13a6d79b5f0a71943f&oe=5B81DB92') ;
   padding: 50px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin : 0;
   font-family: Arial;
+-webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+    
 }
 
 div {
