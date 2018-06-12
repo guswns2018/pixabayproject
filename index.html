@@ -1,21 +1,212 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <link rel = "stylesheet" type = "text/css" href = "https://guswns2018.github.io/pixabayproject/test.css">
-        <title>myportfolio</title>
-    </head>
-    <body>
-        <div class = "header">
-        <h1>Pixabay Project</h1>
-        </div>
-        <embed src="https://player.bgmstore.net/KK23M/mp4" autostart="true" allowscriptaccess="always" enablehtmlaccess="true" allowfullscreen="true" width="0" height="0" type="video/mp4">
-        <ul class="snip1490">
-            <li><a href="#">Main</a></li>
-            <li><a href="http://guswns2018.github.io/pixabayproject/art.html">Art</a></li>
-            <li><a href="http://guswns2018.github.io/pixabayproject/ideas.html">Ideas</a></li>
-            <li><a href="http://guswns2018.github.io/pixabayproject/architecture.html">Architecture</a></li>      
-            <li><a href="http://guswns2018.github.io/pixabayproject/aboutme.html">About me</a></li>
-        </ul>
-    </body>
+  <head>
+  <link rel = "shortcut icon" type="image/x-icon" href="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.15752-9/34309093_376405086214200_6482056280545427456_n.png?_nc_cat=0&_nc_eui2=AeHBaWXLl6gXc1rDVCCh9SGtNNlFfzWoQ0-ASGmXH7ir8vfpV7tvqtnfKFMPYq9wfaF5b5IfeddWItQP2fYqCTq3nLWmeOW5BxUpx3IAVEFaog&oh=3af9562441e82fadcaa1c258a087beac&oe=5BBB3992">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>소명 5기 포트폴리오</title>
+  <link rel="stylesheet" type = "text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type = "text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+  <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <style>
+  /* Demo purposes only */
+    @font-face {
+        font-family : InterparkGothic;
+        src : url (InterparkGothic.otf), url(InterparkGothic.otf);
+    }
+body {
+  background-color: "#212121";
+  background-image: url('https://lh3.googleusercontent.com/vBCc3DNy3VUbb8UB5mXSBLlwzGQHb85L6h4BynKT1VZyRDE7WM2xLv_U0ApzzLeFVIGBr-zA4GGtrsMCRz0-NNwVUssRwwIcULEwbKqMf7gCxIX40l3Snnpzwtf2N4FPxB8VeJVAPg=w1942-h1294-no') ;
+  padding: 50px 10px;
+  margin : 0;
+  font-family: BMJUA;
+-webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+.snip1490 {
+  font-family: InterparkGothic;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #eee;
+  display: inline-block;
+  padding: 0;
+  letter-spacing: 2px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+}
+
+.snip1490 *,
+.snip1490 *:before {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.snip1490 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+.snip1490 > li {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #b3b3b3;
+}
+
+.snip1490 > li:first-of-type {
+  border-left: none;
+}
+
+.snip1490 > li:last-of-type {
+  border-right: none;
+}
+
+.snip1490 a {
+  color: #000000;
+  display: block;
+  padding: 1.1em 2em 1.3em;
+  position: relative;
+  text-decoration: none;
+}
+
+.snip1490 a:hover {
+  color: #ffffff;
+}
+
+.snip1490 > li:before,
+.snip1490 > li:after {
+  position: absolute;
+  content: '';
+}
+
+.snip1490 > li:before {
+  background-color: #962d22;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.snip1490 > li:after {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  height: 5px;
+  background-color: #6d2018;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.snip1490 ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 5px 0;
+  white-space: nowrap;
+  font-size: 0.8em;
+  background-color: #8e2a20;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.snip1490 ul li {
+  display: list-item;
+  float: none;
+  position: relative;
+}
+
+.snip1490 ul li a {
+  padding: 0.8em 1.2em;
+  color: #ffffff;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.snip1490 ul li a:hover {
+  opacity: 1;
+}
+
+.snip1490 li:hover > ul {
+  display: inherit;
+}
+
+.snip1490 li > a:after {
+  content: ' \f3d0';
+  font-family: "InterparkGothic";
+}
+
+.snip1490 li > a:only-child:after {
+  content: '';
+}
+
+.snip1490 ul ul {
+  background-color: #962d22;
+  top: 0px;
+  left: 100%;
+  list-style: none;
+  font-size: 1em;
+}
+
+.snip1490 ul li > a:after {
+  content: ' \f3d1';
+}
+
+.snip1490 > li:hover > a,
+.snip1490 > li.current > a {
+  color: #fff;
+}
+
+.snip1490 > li:hover:before,
+.snip1490 > li.current:before {
+  bottom: 0;
+  opacity: 1;
+}
+.text {text-align:center;}
+.menu {text-align:center;}
+
+</style>
+</head>
+
+<body>
+    <div class="text">
+        <font size = "10px"><p style = "font-family: InterparkGothic"><font color = "white">소명 5기 졸업 앨범</font></p></font>
+    </div>
+    <div class="menu">
+<ul class="snip1490">
+<li><a href="https://guswns2018.github.io/graduateproject/index.html">Home</a></li>
+<li><a href="#">2016</a>
+    <ul>
+    <li><a href="http://guswns2018.github.io/graduateproject/2016haeoreum.html">2016 해오름</a></li>
+    <li><a href="#">제주도 답사</a></li>
+    <li><a href="#">2016 타오름</a></li>
+    <li><a href="#">지리산 답사</a></li>
+    </ul>
+    </li>
+<li><a href="#">2017</a>
+    <ul>
+    <li><a href="#">2017 해오름</a></li>
+    <li><a href="#">울릉도 - 부산 통합답사</a></li>
+    <li><a href="#">2017 타오름</a></li>    
+    <li><a href="http://guswns2018.github.io/graduateproject/2017bakdootrip.html">백두산 비전트립</a></li>
+    <li><a href="http://guswns2018.github.io/graduateproject/2017mt.html">MT</a></li>
+    </ul>
+    </li>
+<li><a href="#">2018</a>
+    <ul>
+    <li><a href="http://guswns2018.github.io/graduateproject/2018haeoreum.html">2018 해오름</a></li>
+    <li><a href="http://guswns2018.github.io/graduateproject/parkgraduate.html">공원 졸업사진</a></li>
+    <li><a href="http://guswns2018.github.io/graduateproject/everland.html">에버랜드 졸업사진</a></li>
+    </ul>
+    </li>
+<li><a href="#">About Us</a></li>
+<li><a href="http://vccs.kr">Our Pages</a></li>
+</ul>
+</div>
+
+</body>
 </html>
