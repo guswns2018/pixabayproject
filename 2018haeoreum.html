@@ -7,6 +7,42 @@
         <link rel = "stylesheet" type = "text/css" href = "https://guswns2018.github.io/pixabayproject/pictures.css">
         <title>2018 해오름</title>
     </head>
+    <script>
+        $(document).ready(function(){
+            //닫기 버튼을 눌렀을 때
+            $('.window .close').click(function (e) {
+                //링크 기본동작은 작동하지 않도록 한다.
+                e.preventDefault();
+                $('#mask, .window').hide();
+            });
+
+            //검은 막을 눌렀을 때
+            $('#mask').click(function () {
+                $(this).hide();
+                $('.window').hide();
+            });
+
+            $("img").click(function(){
+                //simpleLightbox($(this).prop('src'));
+                wrapWindowByMask($(this).prop('src'));
+            });
+        });
+
+        function wrapWindowByMask(imgUrl){
+            //화면의 높이와 너비를 구한다.
+            var maskHeight = $(document).height();
+            var maskWidth = $(window).width();
+
+            //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채운다.
+            $('#mask').css({'width':maskWidth,'height':maskHeight});
+
+            //애니메이션 효과
+         //   $('#mask').fadeIn(500);
+            $("#bigImg").attr("src", imgUrl);
+            $('#mask').fadeTo("slow",0.95);
+        }
+
+    </script>
         <style>
         .header {
             font-family: 'InterparkGothic'
